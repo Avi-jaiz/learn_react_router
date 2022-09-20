@@ -1,0 +1,38 @@
+.form
+{
+    background-color: rgba(0,0,0,0.75);
+    display: flex;
+    width: 35rem;
+    height: 25rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.22rem;
+  border-radius: 2rem;
+  box-shadow: 5px 12px 25px black;
+}
+
+.form > label 
+{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form > input{
+    width: 25rem;
+    height: 2rem;
+    border: 0.2rem solid rgb(6, 196, 180);
+}
+.submit 
+{
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    width: 8rem;
+    height: 2.2rem;
+    font-weight: bold;
+
+}
+

@@ -1,0 +1,36 @@
+.bd
+{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+ 
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.notFoundPage
+{
+    display: flex;
+    flex-direction: column;
+    width: 45rem;
+    height: 15rem;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    border-radius: 2rem;
+}
+
+.ctobtn > button
+{
+    background-color: purple;
+    color: white;
+    width: 6.5rem;
+    height: 2rem;
+    border: none;
+
+}

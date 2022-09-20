@@ -12,6 +12,20 @@
 }
 .App2
 {
-    background-color: rgb(199, 247, 235);
+    background-color: rgb(83, 221, 175);
+    height: 100vh;
+    /* display: flex;
+    justify-content: center; */
+    width: 100vw;
+    
+}
+
+.app 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
     height: 100vh;
 }

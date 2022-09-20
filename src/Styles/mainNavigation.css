@@ -1,0 +1,65 @@
+
+
+.active_class 
+{
+    color: rgb(76, 27, 122);
+   
+    border-bottom: 0.3rem solid blue;
+   
+}
+
+li 
+{
+    margin-top: 1rem;
+    list-style: none;
+    color: white;
+   
+   
+}
+
+.mainNavigation 
+{
+    background-color: rgb(2, 92, 62);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    height: 15rem;
+ 
+}
+
+.mainNavigation , h2 
+{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+
+}
+
+
+.navigation 
+{
+   color: white;
+    width: 25rem;
+    display: flex;
+
+
+}
+
+.navLink 
+{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.5rem;
+   
+}
+
+.navLink:hover 
+{
+    color: rgb(230, 14, 14);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.8rem;
+   transition: all 0.2s ease-in-out;
+}
+
