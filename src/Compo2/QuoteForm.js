@@ -1,10 +1,12 @@
 import '../Styles/quoteForm.css';
 import { useState } from 'react';
+import { Prompt } from 'react-router-dom';
 
 const QuoteForm =(props)=>
 {
   const [text,setText] =useState("");
   const [author,setAuthor]=useState("");
+  const[isEntered,setIsEntered] = useState(false);
 
  const textHandler =(e)=>
  {
@@ -27,8 +29,21 @@ props.onAddQuote({text:text,author:author})
      
  }
 
+ const formFocusHandler =()=>{
+ 
+   setIsEntered(true);
+ }
+
+ const handlePrompt =()=>{
+    setIsEntered(false)
+ }
+
     return(
-<form className="form">
+
+
+        <>
+        <Prompt when={isEntered} message={()=>'Are you sure to leave?'}/>
+<form className="form" onFocus={formFocusHandler} onSubmit={submitHandler}>
     <label>
         Title
     </label>
@@ -39,11 +54,12 @@ props.onAddQuote({text:text,author:author})
     </label>
     <input type='text' onChange={authorHandler} value={author}/>
 
-    <button className="submit" onClick={submitHandler}>Submit</button>
+    <button className="submit" onClick={handlePrompt}>Submit</button>
 
 
 
 </form>
+</>
     )
 }
 

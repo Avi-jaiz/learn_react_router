@@ -8,6 +8,7 @@ const QuoteItem =props=>
 <div className="quoteItem">
 
 <div className='quoteText'>
+  <h3> {props.id}</h3> 
 <h4>{props.text}</h4>
 
 

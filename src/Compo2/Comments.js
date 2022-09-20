@@ -1,12 +1,14 @@
 
 import '../Styles/comments.css';
-const Comments =()=>
+const Comments =(props)=>
 {
+console.log(props)
+
     return(
         <div className="comments">
             <h2>User Comments</h2>
             <button>Add a comment</button>
-            <p>comments...</p>
+            <p>This is a comment</p>
         </div>
     )
 }

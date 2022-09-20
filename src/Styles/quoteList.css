@@ -6,3 +6,15 @@
     justify-content: center;
     align-items: center;
 }
+
+.btn 
+{
+    width: 8rem;
+    height: 2.5rem;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    
+}

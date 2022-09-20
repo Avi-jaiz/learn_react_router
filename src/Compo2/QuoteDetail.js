@@ -1,4 +1,4 @@
-import { Route, useParams  } from "react-router-dom";
+import { Route, useParams  ,Link} from "react-router-dom";
 import Comments from "./Comments";
 import '../Styles/quoteDetails.css';
 
@@ -22,16 +22,29 @@ if(!quotes)
 
     return(
         <div className="quoteDetails">
-<h2>Quotes Details</h2>
+
+          <div className="quoteCard">
+          
 <h1>{quotes.author}</h1>
 <p>{quotes.text}</p>
+
+
+<Link to={`/quote/${params.quoteId}/comments`} className='commentBtn'>
+Load Comments
+</Link>
 
 <Route to={`/quote/${params.quoteId}/comments`} exact>
 <Comments />
 
 </Route>
 
-        </div>
+          </div>
+
+
+
+
+</div>
+      
     )
 }
 

@@ -1,15 +1,22 @@
 import QuoteForm from "./QuoteForm";
 import '../Styles/newQuote.css';
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const NewQuote =(props)=>
 {
   const [quote,setQuote] = useState([]);
+const history = useHistory();
+
+
+
  const quoteAddingHandler=(text,author)=>
  {
     setQuote((prevState)=>{
         return [...prevState, {text,author}]
     })
+
+    history.push('./quotes')
  }
 
 
