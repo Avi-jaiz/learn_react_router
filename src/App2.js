@@ -5,6 +5,7 @@ import NotFoundPage from "./Compo2/NotFoundPage";
 import QuoteDetail from "./Compo2/QuoteDetail";
 
 
+
 import Layout from "./Layout/Layout";
 
 
@@ -43,7 +44,7 @@ return(
 </Route>
 
    </Switch>
-   
+
    
    </Layout>
    </div>
